@@ -8,4 +8,12 @@ Clone repository and
 
 node version : v10.23.0
 
+```
 npm install
+```
+
+## Start
+
+```
+npm start
+```
