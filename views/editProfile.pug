@@ -2,7 +2,7 @@ extends layouts/main
 
 block content
     .form-container
-        form(action=routes.editProfile, method="post")
+        form(action=route.user+routes.editProfile, method="post")
             label(for="avator") Avator
             input(type="file", id="avator", name="avator")
             input(type="text",name="name",placeholder="Full Name")
