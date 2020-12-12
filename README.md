@@ -4,9 +4,8 @@ Clone Youtube using Vanilla JS and Node.JS
 
 ## Install
 
-Clone repository and
-
 node version : v10.23.0
+MongoDB Version : 4.4.2
 
 ```
 npm install
