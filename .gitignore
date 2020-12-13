@@ -118,5 +118,5 @@ dist
 # package-lock.json
 package-lock.json
 
-# videos folder
-videos
+# uploads folder
+uploads
