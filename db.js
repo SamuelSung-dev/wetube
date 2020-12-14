@@ -1,7 +1,8 @@
-import mongoose from "mongoose";
-import dotenv from "dotenv";
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import './models/Video';
+
 dotenv.config();
-import "./models/Video";
 
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
@@ -11,8 +12,10 @@ mongoose.connect(process.env.MONGO_URL, {
 
 const db = mongoose.connection;
 
-const handleOpen = () => console.log("Connected to DB");
+// eslint-disable-next-line no-console
+const handleOpen = () => console.log('Connected to DB');
+// eslint-disable-next-line no-console
 const handleError = (error) => console.log(`Error on DB Connection:${error}`);
 
-db.once("open", handleOpen);
-db.on("error", handleError);
+db.once('open', handleOpen);
+db.on('error', handleError);

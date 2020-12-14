@@ -1,33 +1,33 @@
-import express from "express";
-import morgan from "morgan";
-import helmet from "helmet";
-import cookieParser from "cookie-parser";
-import bodyParser from "body-parser";
-import { localsMiddleware } from "./middlewares";
-import userRouter from "./routers/userRouter";
-import videoRouter from "./routers/videoRouter";
-import globalRouter from "./routers/globalRouter";
-import routes from "./routes";
+import express from 'express';
+import morgan from 'morgan';
+import helmet from 'helmet';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import { localsMiddleware } from './middlewares';
+import userRouter from './routers/userRouter';
+import videoRouter from './routers/videoRouter';
+import globalRouter from './routers/globalRouter';
+import routes from './routes';
 
 const app = express();
 
-app.set("view engine", "pug");
+app.set('view engine', 'pug');
 /* middleware */
-app.use("/uploads", express.static("uploads"));
+app.use('/uploads', express.static('uploads'));
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(helmet());
 
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
   res.setHeader(
-    "Content-Security-Policy",
-    "script-src 'self' https://archive.org"
+    'Content-Security-Policy',
+    "script-src 'self' https://archive.org",
   );
   return next();
 });
 
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 
 app.use(localsMiddleware);
 
