@@ -13,9 +13,19 @@ npm install
 
 ## Start
 
+- server : "nodemon --exec babel-node init.js --delay 2"
 ```
-npm start
+npm run dev:server
 ```
+- make static (dev) : "WEBPACK_ENV=development webpack -w"
+```
+npm run dev:assets
+```
+- make static (build) : "WEBPACK_ENV=production webpack"
+```
+npm run build:assets
+```
+
 
 ## Pages:
 
@@ -27,5 +37,19 @@ npm start
 - [x] Edit Profile
 - [x] Change Password
 - [x] Upload
-- [ ] Video Detail
+- [x] Video Detail
 - [x] Edit Video
+
+
+## Pages style
+
+- [ ] Home
+- [ ] Join
+- [ ] Login
+- [ ] Search
+- [ ] User Detail
+- [ ] Edit Profile
+- [ ] Change Password
+- [ ] Upload
+- [ ] Video Detail
+- [ ] Edit Video
