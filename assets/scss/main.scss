@@ -18,15 +18,34 @@ main {
 }
 
 button,
-input {
+input:not([type="file"]),
+textarea {
   padding: 0.5rem 0.5rem;
   width: 100%;
+  border: none;
   border-radius: 0.3rem;
   font-size: 1rem;
   color: $black;
   font-weight: 600;
+  background-color: white;
+  max-width: 20rem;
+  resize: none;
   &::placeholder {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.7);
   }
+}
+
+button {
+  background-color: $blue;
+  color: white;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button.delete {
+  background-color: $dark-red;
 }

@@ -7,16 +7,10 @@
     width: 100%;
     max-width: 20rem;
     margin-bottom:3rem;
-    input {
+    input:not([type="file"]),
+    textarea {
       display: block;
-      width: 100%;
-      padding: 0.5rem 0.5rem;
-      border-radius: 0.3rem;
-      font-size: 1rem;
-      color: $black;
-      font-weight: 600;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 0.5rem;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       &::placeholder {
         font-weight: 300;
@@ -29,6 +23,16 @@
     input[type="submit"] {
       background-color: $blue;
       color: white;
+    }
+  }
+  a {
+    width: 100%;
+    max-width: 20rem;
+  }
+  .fileUpload {
+    label {
+      font-weight: 300;
+      margin-right: 10px;
     }
   }
 }
