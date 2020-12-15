@@ -19,7 +19,8 @@ main {
 
 button,
 input:not([type="file"]),
-textarea {
+textarea,
+.fileUpload {
   padding: 0.5rem 0.5rem;
   width: 100%;
   border: none;

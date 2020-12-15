@@ -1,0 +1,13 @@
+.videoBlock {
+  a:visited{
+    color: $black;
+  }
+  .videoBlock__thumbnail {
+    width: 100%;
+  }
+  .videoBlock__title {
+    font-size: 1.2rem;
+    font-family: 300;
+    margin-bottom: 0.8rem;
+  }
+}
