@@ -1,0 +1,39 @@
+.video-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  .video__player {
+    video {
+      width: 100%;
+    }
+  }
+  .video__info {
+    width: 100%;
+    margin-top: 3rem;
+    a{
+      button {
+        background-color: $blue;
+        color: white;
+        width: auto;
+        margin-bottom: 1rem;
+      }
+    }
+    .video__title,
+    .video__views,
+    .video__description {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .video__title {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    .video__views {
+      font-size: 0.9em;
+    }
+  }
+  .video__comments {
+    margin-top: 1.5rem;
+  }
+}
